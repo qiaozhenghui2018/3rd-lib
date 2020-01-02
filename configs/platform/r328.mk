@@ -18,11 +18,15 @@
 #     last modified: 05/12 2019 16:27
 # ===============================================================
 
-TOOLCHAINS_DIR 		:= /home/uos/data/yzs/ivm/toolchains/arm_328tina
+TOOLCHAINS_DIR 		:= /opt/toolchains/arm_328tina
 TOOLCHAINS_BIN_DIR 	:= $(TOOLCHAINS_DIR)/bin
 TOOLCHAINS_INC_DIR 	:= $(TOOLCHAINS_DIR)/include
 GCC_PREFIX 			:= arm-openwrt-linux-
 HOST         		:= arm-linux
 
-STAGING_DIR 	:= $(TOOLCHAINS_BIN_DIR)
+CFLAGS 				:=
+LDFLAGS 			:=
+
+STAGING_DIR 		:= $(TOOLCHAINS_BIN_DIR)
 export STAGING_DIR
+
